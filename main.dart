@@ -26,12 +26,9 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Logo
-              Image.network(
-                'https://undiknas.ac.id/wp-content/uploads/2023/04/UNDIKNAS-COLOR-1024x1024.jpg', 
-                height: 150,
-              ), // Ganti dengan logo sesuai URL
+              Image.asset('https://undiknas.ac.id/wp-content/uploads/2023/04/UNDIKNAS-COLOR-1024x1024.jpg', height: 150), // Ganti dengan logo sesuai path
               SizedBox(height: 20),
-
+              
               // Email TextField
               TextField(
                 decoration: InputDecoration(
@@ -60,23 +57,19 @@ class LoginScreen extends StatelessWidget {
 
               // Login Button
               ElevatedButton(
-                onPressed: () {
-                  // Tambahkan logika login di sini
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue[900], // Ganti warna sesuai gambar
+                  primary: Colors.blue[900], // Ganti warna sesuai gambar
                   minimumSize: Size(double.infinity, 50), // Full width button
                 ),
                 child: Text('Login'),
               ),
-
+              
               SizedBox(height: 20),
-
+              
               // New Student Link
               TextButton(
-                onPressed: () {
-                  // Tambahkan logika link mahasiswa baru di sini
-                },
+                onPressed: () {},
                 child: Text(
                   'Mahasiswa Baru? Klik disini',
                   style: TextStyle(
